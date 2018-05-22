@@ -4,7 +4,6 @@ const path = require('path');
 // requiring node third party nodules
 const express = require('express');
 const bodyParser = require('body-parser');
-const mysql = require('mysql');
 
 // invoke express function and assign return value to "app" variable
 var app = express();
