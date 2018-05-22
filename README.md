@@ -23,3 +23,13 @@ npm start
 
 Open your browser and visit localhost:3000 to see the app.
 
+## Home Page
+Click "Go To Survey" to participate.
+
+<img src="./assets/images/home.png" alt="Home Page View">
+
+## Survey
+Answer questions and click submit to find your match!
+
+<img src="./assets/images/survey.png" alt="Survey Page View">
+
