@@ -167,7 +167,7 @@
       <br>
 
       <!-- Submit Button -->
-      <button type="button" onclick="submitAnswers()" class="btn btn-primary btn-lg btn-block" id="submit">
+      <button type="button" onclick="submitAnswers()" class="btn btn-primary btn-lg btn-block custbutton2" id="submit">
         <i class="fa fa-check-circle" aria-hidden="true"></i>
         Submit</button>
     </form>
@@ -191,6 +191,7 @@
         </div>
         <div class="modal-body">
           <p id="modalMatch">Modal body text goes here.</p>
+          <img id="modalphoto" src="">
         </div>
         <div class="modal-footer">
           <a href="/" class="btn btn-primary">Close</a>
@@ -246,6 +247,7 @@
         name = resp.name;
       }
       $('#modalMatch').html(name);
+      $("#modalphoto").attr("src", resp.photo);
 
       $('#myModal').modal();
     });

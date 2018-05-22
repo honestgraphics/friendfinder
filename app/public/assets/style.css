@@ -1,5 +1,6 @@
 body {
-  background-color: blue;
+  background-image: url("http://ak2.picdn.net/shutterstock/videos/19388392/thumb/11.jpg");
+  background-size: cover;
 }
 
 h3 {
@@ -11,7 +12,7 @@ h3 {
 }
 
 .jumbotron {
-  background-color: purple;
+  background-color: rgb(171, 62, 185);
   color: white;
 }
 
@@ -22,8 +23,39 @@ hr {
 
 .surveyBtn {
   background-color: white;
-  color: purple;
+  color: rgb(171, 62, 185);
   border-radius: 10px;
   border: 0;
 }
 
+.custbutton {
+  background-color: white;
+  color: rgb(171, 62, 185);
+  border: 0px;
+}
+
+.custbutton:hover {
+  background-color: white;
+  color: rgb(171, 62, 185);
+  border: 0px;
+}
+
+footer a {
+  color: rgb(171, 62, 185);
+}
+
+h2, h3, h4 {
+  color: rgb(171, 62, 185);
+}
+
+.custbutton2 {
+  background-color: rgb(171, 62, 185);
+  color: white;
+  border: 0px;
+}
+
+.custbutton2:hover {
+  background-color: rgb(171, 62, 185);
+  color: white;
+  border: 0px;
+}
