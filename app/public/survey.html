@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./assets/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">
+          <strong>Friend Finder</strong>
+        </h1>
+        <p class="lead">The most popular dating app around.</p>
+      </div>
+    </div>
+    <form method="POST" action="/api/friends">
+      <h2>Survey Questions</h2>
+
+      <h3>
+        <strong>About You</strong>
+      </h3>
+      <h4>Name (Required)</h4>
+      <input type="text" name="name" id="name" class="form-control" required>
+      <h4>Link to Photo Image (Required)</h4>
+      <input type="text" name="photo" id="photo" class="form-control" required>
+      <h3>
+        <strong>Question 1</strong>
+      </h3>
+      <h4>Are you married?</h4>
+      <select class="chosen-select" name="q1" id="q1">
+        <option value=""></option>
+        <option value="1">Yes</option>
+        <option value="2">No</option>
+      </select>
+
+      <h3>
+        <strong>Question 2</strong>
+      </h3>
+      <h4>If you are not married, have you ever been married?</h4>
+      <select class="chosen-select" name="q2" id="q2">
+        <option value=""></option>
+        <option value="1">Yes</option>
+        <option value="2">No</option>
+        <option value="3">N/A</option>
+      </select>
+
+
+      <h3>
+        <strong>Question 3</strong>
+      </h3>
+      <h4>Have you ever used an online dating website?</h4>
+      <select class="chosen-select" name="q3" id="q3">
+        <option value=""></option>
+        <option value="1">Yes</option>
+        <option value="2">No</option>
+      </select>
+
+
+      <h3>
+        <strong>Question 4</strong>
+      </h3>
+      <h4>What are you looking for in online dating?</h4>
+      <select class="chosen-select" name="q4" id="q4">
+        <option value=""></option>
+        <option value="1">Friendship</option>
+        <option value="2">Long Term Relationship</option>
+        <option value="3">Intimate Relationship</option>
+        <option value="4">Shared Interest</option>
+        <option value="5">No Strings Fling</option>
+        <option value="6">Short Term Relationship</option>
+        <option value="7">True Love</option>
+        <option value="8">Marriage</option>
+        <option value="9">N/A</option>
+      </select>
+
+
+      <h3>
+        <strong>Question 5</strong>
+      </h3>
+      <h4>How many times a week on average do you log on to an online dating website?</h4>
+      <select class="chosen-select" name="q5" id="q5">
+        <option value=""></option>
+        <option value="1">0</option>
+        <option value="2">1-3</option>
+        <option value="3">4-7</option>
+        <option value="4">7+</option>
+        <option value="5">N/A</option>
+      </select>
+
+
+      <h3>
+        <strong>Question 6</strong>
+      </h3>
+      <h4>How difficult is it for you to relate to other people’s feelings?</h4>
+      <select class="chosen-select" name="q6" id="q6">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+
+      <h3>
+        <strong>Question 7</strong>
+      </h3>
+      <h4>How many past relationships have you been in?</h4>
+      <select class="chosen-select" name="q7" id="q7">
+        <option value=""></option>
+        <option value="1">0</option>
+        <option value="2">1-3</option>
+        <option value="3">4-7</option>
+        <option value="4">8-10</option>
+        <option value="5">11+</option>
+      </select>
+
+      <h3>
+        <strong>Question 8</strong>
+      </h3>
+      <h4>What is the longest term relationship you have ever been in?</h4>
+      <select class="chosen-select" name="q8" id="q8">
+        <option value=""></option>
+        <option value="1">never been in a long term relationship</option>
+        <option value="2">less than 3 months</option>
+        <option value="3">3-6 months</option>
+        <option value="4">6 months - 1 year</option>
+        <option value="5">1-2 years</option>
+        <option value="6">2-4 years</option>
+        <option value="7">4-6 years</option>
+        <option value="8">6-10 years</option>
+        <option value="9">10+ years</option>
+      </select>
+
+      <h3>
+        <strong>Question 9</strong>
+      </h3>
+      <h4>Have you ever given a relationship a second chance?</h4>
+      <select class="chosen-select" name="q9" id="q9">
+        <option value=""></option>
+        <option value="1">Yes</option>
+        <option value="2">No</option>
+        <option value="3">N/A</option>
+      </select>
+
+      <h3>
+        <strong>Question 10</strong>
+      </h3>
+      <h4>Do you feel more energetic after spending time with a group of people?</h4>
+      <select class="chosen-select" name="q10" id="q10">
+        <option value=""></option>
+        <option value="1">Yes</option>
+        <option value="2">No</option>
+        <option value="3">N/A</option>
+      </select>
+
+      <br>
+      <br>
+
+      <!-- Submit Button -->
+      <button type="button" onclick="submitAnswers()" class="btn btn-primary btn-lg btn-block" id="submit">
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        Submit</button>
+    </form>
+  </div>
+  <footer>
+    <div class="container">
+      <p>
+        <a href="/api/friends">API Friends List</a> |
+        <a href="https://github.com/honestgraphics/friendfinder">GitHub Repo</a>
+      </p>
+    </div>
+  </footer>
+  <div class="modal" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Best Match</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="modalMatch">Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="/" class="btn btn-primary">Close</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js
+"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+
+<script>
+  function submitAnswers() {
+    var name = document.getElementById("name").value;
+    var photo = document.getElementById("photo").value;
+    var q1 = document.getElementById("q1").value;
+    var q2 = document.getElementById("q2").value;
+    var q3 = document.getElementById("q3").value;
+    var q4 = document.getElementById("q4").value;
+    var q5 = document.getElementById("q5").value;
+    var q6 = document.getElementById("q6").value;
+    var q7 = document.getElementById("q7").value;
+    var q8 = document.getElementById("q8").value;
+    var q9 = document.getElementById("q9").value;
+    var q10 = document.getElementById("q10").value;
+
+
+
+    var x = {
+      name,
+      photo,
+      q1,
+      q2,
+      q3,
+      q4,
+      q5,
+      q6,
+      q7,
+      q8,
+      q9,
+      q10
+    }
+
+    $.post('/api/friends', x).done(function (resp) {
+      console.log(resp);
+      var name = "No Match";
+      if (resp && resp.name != "") {
+        name = resp.name;
+      }
+      $('#modalMatch').html(name);
+
+      $('#myModal').modal();
+    });
+
+  }
+</script>
+
+</html>
